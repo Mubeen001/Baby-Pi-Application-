@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mubeen.babyapp.Monitoring"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#dcedc8"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="312dp"
+        android:layout_height="218dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:visibility="visible"
+        app:srcCompat="@drawable/zzz" />
+<TextView
+    android:layout_width="350dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:text="We are taking care of your Baby..!"
+    android:textSize="20dp"
+    />
+    <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+        android:id="@+id/dot_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:onClick="stop"
+            android:src="@drawable/ic_home_black_24dp"
+            app:cb_color="#c5e1a5"
+            app:cb_pressedRingWidth="1dp" />
+
+
+        <at.markushi.ui.CircleButton
+
+            android:id="@+id/watch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="40dp"
+            android:onClick="watch"
+            android:src="@drawable/ic_live_tv_black_24dp"
+            app:cb_color="#c5e1a5"
+            app:cb_pressedRingWidth="1dp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

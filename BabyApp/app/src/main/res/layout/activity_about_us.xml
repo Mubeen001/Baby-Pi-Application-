@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcedc8"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.mubeen.babyapp.About_us">
+
+    <ImageView
+        android:id="@+id/about"
+        android:layout_width="150dp"
+        android:layout_height="141dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="130dp"
+        android:background="@drawable/splash_img" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text="About"></TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:text="This system is designed for those parents whose work place is normally away from that room where baby is sleeping. The main objective of this system is to facilitate parents to not worry about their safety.It will help parents to monitor their baby while he/she is sleeping in his/her room.
+It is basically a hardware based system that includes a webcam, built-in mic included in that cam and a raspberry pi device that will work as a middleware between mic and a webcam. It includes an android app for android phones. This system is user friendly, easily installable and accessible in a range of a Wi-Fi.
+This system is designed in such a way that it will detect the motion and voice of a baby when he/she is moving or crying, after detection of voice/movement it will generate an alert message and will send an alert message notification to android phone of parents.
+"/>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <at.markushi.ui.CircleButton
+
+        android:id="@+id/home"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="110dp"
+        android:onClick="home"
+        android:src="@drawable/ic_home_black_24dp"
+        app:cb_color="#c5e1a5"
+        app:cb_pressedRingWidth="1dp" />
+</LinearLayout>

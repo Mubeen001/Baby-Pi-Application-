@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/appbackground"
+    android:gravity="center"
+    android:id="@+id/lin_lay"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Baby P! App"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/main"
+        android:textSize="49sp"
+        android:elevation="1dp"
+        android:layout_marginLeft="2dp" />
+
+    <ImageView
+        android:layout_width="173dp"
+        android:layout_height="141dp"
+        android:id="@+id/splash"
+        android:background="@drawable/splash_img"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="0.17" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/green_50"
+        android:text="We Will Takecare Of your Baby !!"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#dcedc8"
+    android:weightSum="1"
+    tools:context="com.example.mubeen.babyapp.MainActivity">
+
+    <TextView
+        android:text="Baby P! App"
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/main2"
+        android:textSize="49sp"
+        android:elevation="1dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="2dp"
+
+        />
+
+    <ir.sohreco.circularpulsingbutton.CircularPulsingButton
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:elevation="1dp"
+        android:onClick="start"
+        app:cpb_animationDuration="100"
+        app:cpb_color="@color/red_A700"
+        app:cpb_text="Start Monitoring!"
+        app:cpb_textColor="#eeeeee"
+        app:cpb_zoomInScale="1.5"
+        app:cpb_zoomOutScale="0.5" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <at.markushi.ui.CircleButton
+
+        android:id="@+id/circle"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        app:cb_color="#c5e1a5"
+        app:cb_pressedRingWidth="1dp"
+        android:src="@drawable/ic_close_black_24dp"
+        android:onClick="exit"/>
+    <at.markushi.ui.CircleButton
+
+        android:id="@+id/about_us"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="132dp"
+        app:cb_color="#c5e1a5"
+        app:cb_pressedRingWidth="1dp"
+        android:src="@drawable/ic_priority_high_black_24dp"
+        android:onClick="about_us"/>
+
+</LinearLayout>
+
+
+</LinearLayout>
